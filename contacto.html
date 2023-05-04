@@ -30,25 +30,37 @@
 
 
         <label for="correo">Correo Electronico</label>
-        <input type="email" id="correo" name="correo" required placeholder="xxxx@gmail.com" class="input-padron">
+        <input type="email" id="correo" name="correo" required placeholder="email@gmail.com" class="input-padron">
 
         <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono" required placeholder="0000-0000" class="input-padron">
+        <input type="tel" id="telefono" name="telefono" required placeholder="(+xx) xxxx-xxxx" class="input-padron">
 
         <label for="mensaje">Mensaje</label>
         <textarea name="mensaje" id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
 
-        <div class="contacto">
-            <p>¿Cómo te gustaría que te contactemos?</p>
+        <fieldset>
+            <legend>¿Cómo te gustaría que te contactemos?</legend>
 
             <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
 
             <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
             
-            <label for="radio-whastapp"><input type="radio" name="contacto" value="whastApp" id="radio-whastapp">WhastApp</label>
-        </div>
+            <label for="radio-whastapp"><input type="radio" name="contacto" value="whastApp" id="radio-whastapp" checked>WhastApp</label>
+        </fieldset>
 
-            <label for="submit" class="checkbox"><input type="checkbox">Le gustaría recibir novedades de la Barberia Alura </label>
+        <fieldset>
+            <legend>¿En qué horario le gustaría ser atendido?</legend>
+            <select name="horario" id="horario">
+                <option value="mañana">Mañana</option>
+                <option value="tarde">Tarde</option>
+                <option value="noche">Noche</option>
+            </select>
+        </fieldset>
+
+        
+
+
+            <label for="submit" class="checkbox"><input type="checkbox" checked>Le gustaría recibir novedades de la Barberia Alura </label>
         <input type="submit" value="Enviar Formulario">
     </form>
 
