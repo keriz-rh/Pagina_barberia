@@ -4,60 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
     <title>Barbería Alura</title>
 </head>
 
     <body>
 
-        <header><div class="caja">
+        <header>
+        <div class="caja">
             <h1><img src="imagenes/logo.png" alt="Logo"></h1>
             <nav>    
                 <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index-home.html">Home</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="contacto.html">Contactos</a></li>
                 </ul>
             </nav>
         </div>
-        </header>
-            
-
-
-        <img id="banner" src="banner/banner.jpg">
         
-        <div class="principal">
+        </header>
 
-            <h2 class="titulo-centralizado">Sobre la Barbería Alura</h2>
+        <img class="banner" src="banner/banner.jpg">
 
-            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+    <main>
+    <section class="principal">
 
-            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+        <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+        
+        <img class= "utensilios" src="imagenes/utensilios.jpg" alt="utensilios_barberia">
 
-            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p> 
+        <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+        <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
 
+        <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p> 
+
+    </section>
+
+    <section class="mapa">
+        <h3 class="titulo-principal">Nuestra Ubicación</h3>
+        <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
+        <div class="mapa-contenido">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124038.41567363599!2d-89.24918689685842!3d13.706303826561545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63312cffdc0e23%3A0xfd208b3a87cfb4d9!2sMetrocentro%20San%20Salvador!5e0!3m2!1ses-419!2ssv!4v1683257272420!5m2!1ses-419!2ssv" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         </div>
 
-        <div class="diferenciales">
+    </section>
 
-            <h3 class="titulo-centralizado">Diferenciales</h3>
-        
-            <ul>
+    <section class="diferenciales">
+
+        <h3 class="titulo-principal">Diferenciales</h3>
+    
+        <div class="contenido-diferenciales">
+            <ul class="lista-diferenciales">
                 <li class="items">Atención personalizada a los clientes</li>
                 <li class="items">Espacio diferenciado</li>
                 <li class="items">Localización</li>
                 <li class="items">Profesesionales calificados</li>
-            </ul>
+                <li class="items">Puntualidad</li>
+                <li class="items">Limpieza</li>
 
-            <img src="diferenciales/diferenciales.jpg" class="imagenDiferenciales">
+            </ul><img src="diferenciales/diferenciales.jpg"
+            class="imagen-diferenciales">
+    
 
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+            </div>
         </div>
-           <footer>
-        <img src="imagenes/logo-blanco.png" alt="logo blanco">
-        <p class="copyright">&copy Copyright Barbería Alura - 2023</p>
-        <p class="github"><a href="https://github.com/Kerizr/Pagina_barberia">GitHub: Kevin Rivera (KerizrH)</a></p>
-    </footer>
+
+    </section>
+
+
+
+    </main>
+        
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="logo blanco">
+            <p class="copyright">&copy Copyright Barbería Alura - 2023</p>
+            
+            <div class="container">
+                <a href="https://github.com/Kerizr/Pagina_barberia"> <img class="icons" src="imagenes/github.png" alt="github"></a>
+                <a href="https://www.instagram.com/keriz_rh/"> <img class="icons" src="imagenes/instagram.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/kevin-armando-rivera-henr%C3%ADquez-971016214/"> <img class="icons" src="imagenes/linkedin.png" alt="link"></a>
+            </div>
+        
+        </footer>
         
     </body>
 </html>
